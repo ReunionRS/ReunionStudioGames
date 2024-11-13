@@ -17,20 +17,21 @@ body{
 
 header{
     width: 100%;
-    height: 20vh;
+    height: 15vh;
     background-color: black;
     display: flex;
-    justify-content: space-around;
 }
 
 .logo{
     display: flex;
     flex-direction: row;
     align-items: center;
+    margin-left: 13vh;
 }
 
 .logo h1{
     color: white;
+    font-size: 24px;
     margin-left: 20px;
 }
 
@@ -43,10 +44,11 @@ ul{
     display: flex;
     flex-direction: row;
     align-items: center;
+    margin-left: 15vh;
 }
 
 li{
-    margin-left: 40px;
+    margin-left: 10vh;
     font-size: 20px;
     font-weight: bold;
 }
@@ -63,8 +65,108 @@ li a:hover{
 
 .banner{
     margin: 0;
-    background-image: url('../img/png/background_img 1.png');
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
+
+}
+
+.banner-text{
+    position: absolute;
+    z-index: 99999;
+    color: white;
+    text-align: center;
+    left: 375px;
+    top: 450px;
+}
+
+.banner-text h1{
+    font-family: "Rubik", sans-serif;
+    font-size: 10vh;
+}
+
+.banner-text p{
+    font-size: 3vh;
+    font-weight: lighter;
+    font-family: "Open Sans", serif;
+}
+
+.banner img{
+    width: 100%;
+    height: 100%;
+    filter: brightness(30%);
+}
+
+.games{
+    width: 100%;
+    height: 100%;
+}
+
+.games h1{
+    text-align: center;
+    font-size: 8vh;
+    margin-top: 10vh;
+}
+
+.card-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    max-width: 1250px;
+    margin: 150px auto;
+    padding: 20px;
+    gap: 20px;
+}
+.card-list .card-item {
+    background: #fff;
+    padding: 26px;
+    border-radius: 8px;
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.04);
+    list-style: none;
+    cursor: pointer;
+    text-decoration: none;
+    border: 2px solid transparent;
+    transition: border 0.5s ease;
+}
+.card-list .card-item:hover {
+    border: 2px solid #000;
+}
+.card-list .card-item img {
+    width: 100%;
+    aspect-ratio: 16/9;
+    border-radius: 8px;
+    object-fit: cover;
+}
+.card-list span {
+    display: inline-block;
+    background: #F7DFF5;
+    margin-top: 32px;
+    padding: 8px 15px;
+    font-size: 0.75rem;
+    border-radius: 50px;
+    font-weight: 600;
+}
+.card-list .year {
+    background-color: #000000;
+    color: #ffffff;
+}
+
+.card-item h3 {
+    color: #000;
+    font-size: 1.438rem;
+    margin-top: 28px;
+    font-weight: 600;
+}
+.card-item .arrow {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transform: rotate(-35deg);
+    height: 40px;
+    width: 40px;
+    color: #000;
+    border: 1px solid #000;
+    border-radius: 50%;
+    margin-top: 40px;
+    transition: 0.2s ease;
+}
+.card-list .card-item:hover .arrow  {
+    background: #000;
+    color: #fff;
 }
