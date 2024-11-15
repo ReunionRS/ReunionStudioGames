@@ -49,8 +49,8 @@ header{
     margin-bottom: 10vh;
     z-index: 1;
     text-align: center;
-    left: 575px;
-    top: 438px;
+    left: 565px;
+    top: 418px;
     color:White
 }
 
@@ -61,6 +61,7 @@ header{
 }
 
 .banner img{
+    display: block;
     width: 100%;
     height: 100%;
     filter: brightness(30%);
